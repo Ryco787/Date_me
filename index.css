@@ -1,0 +1,65 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-color: rgb(185, 220, 250);
+    
+}
+
+#noButton{
+    position: absolute;
+    margin-left: 200px;
+    transition: 0.5s;
+}
+
+#yesButton{
+    position: absolute;
+    margin-right: 200px;
+}
+
+.header{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    font-weight: lighter;
+    color:black;
+    text-align:center;
+    margin-bottom: 40px;
+    margin-left: 60px;
+}
+
+.buttons{
+    
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    
+}
+
+.btn{
+    background-color: rgb(43, 152, 247);
+    color: white;
+    padding: 5px 30px;
+    text-align: center;
+    font-size: medium;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 10px 0px;
+    border-color: rgb(185, 220, 250);
+    border-radius: 11px;
+    transition: background-color 0.3s ease;
+    cursor:pointer;
+    display: inline-block;
+    position: fixed;
+}
+
+.gif_content{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 150px;
+    height: 400px;
+    margin-left: 120px;
+}

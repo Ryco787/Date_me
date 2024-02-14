@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date me</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="content">
+        <div>
+            <h1 class="header">Will you date me 🥺?</h1>
+        </div>
+        <div class="gif_content">
+                <img id="dance_gif" src="https://media.tenor.com/PSh0dy__fcYAAAAi/milk-bear.gif" alt="dance">
+        </div>
+        <div class = "buttons">
+            <button class="btn" id = "yesButton" onclick="nextPage()" onmouseover="ChangeGif()" onmouseout="RestoreGif()">Yes</button>
+            <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">No</button>
+            <script>
+                function nextPage() {
+                    window.location.href = "yes.html";
+                }
+                
+                function moveButton() {
+                    document.getElementById('dance_gif').src="https://media.tenor.com/xSdP8nYROncAAAAi/milk-and-mocha-crying.gif"
+                    var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
+                    var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
+                    document.getElementById('noButton').style.left = `${x}px`;
+                    document.getElementById('noButton').style.top = `${y}px`;
+                }
+
+                function ChangeGif(){
+                     document.getElementById('dance_gif').src="https://media.tenor.com/UVPl_GBDkSAAAAAi/yas-yeah.gif"
+                }
+
+                function RestoreGif(){
+                    document.getElementById('dance_gif').src="https://media.tenor.com/PSh0dy__fcYAAAAi/milk-bear.gif"
+                }
+
+                function showAlert() {
+            alert('♡︎  Plsss datee meee ♡︎');
+        }
+        // Set a timeout for 8 seconds (8000 milliseconds)
+        setTimeout(showAlert, 8000);
+            </script> 
+        </div>
+    </div>
+   
+</body> 
+</html>
